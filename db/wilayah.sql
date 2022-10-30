@@ -2,10 +2,10 @@
 -- Table structure for table wilayah
 --
 
-DROP TABLE IF EXISTS wilayah;
-CREATE TABLE IF NOT EXISTS wilayah (
- kode varchar(13) NOT NULL,
- nama varchar(100) DEFAULT NULL
+DROP TABLE IF EXISTS regions;
+CREATE TABLE IF NOT EXISTS regions (
+ code varchar(13) NOT NULL,
+ name varchar(100) DEFAULT NULL
 );
 
 --
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS wilayah (
 --
 
 -- Provinsi Aceh
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('11','ACEH'),
 ('11.01','KAB. ACEH SELATAN'),
@@ -996,7 +996,9 @@ VALUES
 ('11.03.10.2019','Alue Geunteng'),
 ('11.03.10.2020','Pertamina'),
 ('11.03.10.2021','Alue Batee'),
-('11.03.10.2022','Beurandang'),
+('11.03.10.2022','Beurandang');
+INSERT INTO regions (code,name)
+VALUES
 ('11.03.10.2024','Seumanah Jaya'),
 ('11.03.11','Pante Bidari'),
 ('11.03.11.2001','Blang Seunong'),
@@ -1994,7 +1996,9 @@ VALUES
 ('11.06.03.2053','Lingom'),
 ('11.06.04','Seulimeum'),
 ('11.06.04.2001','Peukan Seulimeum'),
-('11.06.04.2002','Keunaloi'),
+('11.06.04.2002','Keunaloi');
+INSERT INTO regions (code,name)
+VALUES
 ('11.06.04.2003','Lhieb'),
 ('11.06.04.2004','Alue Gintong'),
 ('11.06.04.2005','Gampong Seulimeum'),
@@ -2992,7 +2996,9 @@ VALUES
 ('11.07.17.2004','Cot Sukon'),
 ('11.07.17.2005','Mns Dayah Tuha'),
 ('11.07.17.2006','Kampong Cot'),
-('11.07.17.2007','Paloh Jeureula'),
+('11.07.17.2007','Paloh Jeureula');
+INSERT INTO regions (code,name)
+VALUES
 ('11.07.17.2008','Barieh'),
 ('11.07.17.2009','Kandang'),
 ('11.07.17.2010','Riweuek'),
@@ -3990,7 +3996,9 @@ VALUES
 ('11.08.19.2015','Matang Sijuek Teungoh'),
 ('11.08.19.2016','Matang Sijuek Barat'),
 ('11.08.19.2017','Cot Laba'),
-('11.08.19.2018','Meunasah Pante'),
+('11.08.19.2018','Meunasah Pante');
+INSERT INTO regions (code,name)
+VALUES
 ('11.08.19.2019','Meurandeh Paya'),
 ('11.08.19.2020','Cot Murong'),
 ('11.08.19.2021','Matang Paya'),
@@ -4988,7 +4996,9 @@ VALUES
 ('11.11.16.2003','Tanjong Beuridi'),
 ('11.11.16.2004','Darul Aman'),
 ('11.11.16.2005','Geulanggang Labu'),
-('11.11.16.2006','Teupin Reudeup'),
+('11.11.16.2006','Teupin Reudeup');
+INSERT INTO regions (code,name)
+VALUES
 ('11.11.16.2007','Ulee Jalan'),
 ('11.11.16.2008','Paya Crot'),
 ('11.11.16.2009','Pulo Panyang'),
@@ -5986,7 +5996,9 @@ VALUES
 ('11.16.12.2001','Banda Mahligai'),
 ('11.16.12.2002','Sekerak Kiri'),
 ('11.16.12.2003','Pantai Tinjau'),
-('11.16.12.2004','Pantai Perlak'),
+('11.16.12.2004','Pantai Perlak');
+INSERT INTO regions (code,name)
+VALUES
 ('11.16.12.2005','Kebon Batang Ara'),
 ('11.16.12.2006','Sekerak Kanan'),
 ('11.16.12.2007','Lubuk Sidup'),
@@ -6828,7 +6840,7 @@ VALUES
 ('11.75.05.2010','Darussalam');
 
 -- Provinsi SUmatera Utara
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('12','SUMATERA UTARA'),
 ('12.01','KAB. TAPANULI TENGAH'),
@@ -6984,7 +6996,9 @@ VALUES
 ('12.01.11.2002','Sampang Maruhur'),
 ('12.01.11.2003','Siordang'),
 ('12.01.11.2004','Pardomuan'),
-('12.01.11.2005','Simpang III Lae Bingke'),
+('12.01.11.2005','Simpang III Lae Bingke');
+INSERT INTO regions (code,name)
+VALUES
 ('12.01.11.2006','Sigodung'),
 ('12.01.11.2007','Masnauli'),
 ('12.01.11.2008','Muara Ode'),
@@ -7982,7 +7996,9 @@ VALUES
 ('12.05.13.2010','Bukit Mengkirai'),
 ('12.05.13.2011','Pasiran'),
 ('12.05.14','Babalan'),
-('12.05.14.1001','Pelawi Utara'),
+('12.05.14.1001','Pelawi Utara');
+INSERT INTO regions (code,name)
+VALUES
 ('12.05.14.1006','Berandan Barat'),
 ('12.05.14.1007','Berandan Timur Baru'),
 ('12.05.14.1008','Berandan Timur'),
@@ -8980,7 +8996,9 @@ VALUES
 ('12.08.13.2011','Marihat Marsada'),
 ('12.08.13.2012','Pondok Buluh'),
 ('12.08.13.2013','Marihat Pondok'),
-('12.08.13.2014','Lumban Gorat'),
+('12.08.13.2014','Lumban Gorat');
+INSERT INTO regions (code,name)
+VALUES
 ('12.08.13.2015','Palianopat'),
 ('12.08.14','Purba'),
 ('12.08.14.1008','Tiga Runggu'),
@@ -9978,7 +9996,9 @@ VALUES
 ('12.12.21.2003','Lumban Rau Utara'),
 ('12.12.21.2004','Sipagabu'),
 ('12.12.21.2005','Napajoring'),
-('12.12.21.2006','Liat Tondung'),
+('12.12.21.2006','Liat Tondung');
+INSERT INTO regions (code,name)
+VALUES
 ('12.12.21.2007','Batu Manumpak'),
 ('12.12.21.2008','Lumban Rau Tenggara'),
 ('12.12.21.2009','Cinta Damai'),
@@ -10976,7 +10996,9 @@ VALUES
 ('12.15.04.2003','Silima Kuta'),
 ('12.15.04.2004','Lae Langge Namuseng'),
 ('12.15.04.2005','Cikaok'),
-('12.15.05','Pergetteng Getteng Sengkut'),
+('12.15.05','Pergetteng Getteng Sengkut');
+INSERT INTO regions (code,name)
+VALUES
 ('12.15.05.2001','Kecupak I'),
 ('12.15.05.2002','Kecupak II'),
 ('12.15.05.2003','Aornakan I'),
@@ -11974,7 +11996,9 @@ VALUES
 ('12.20.05.2006','Siunggam Dolok'),
 ('12.20.05.2007','Balimbing Jae'),
 ('12.20.05.2008','Sipupus Lombang'),
-('12.20.05.2009','Balimbing Julu'),
+('12.20.05.2009','Balimbing Julu');
+INSERT INTO regions (code,name)
+VALUES
 ('12.20.05.2010','Sobar'),
 ('12.20.05.2011','Pamuntaran'),
 ('12.20.05.2012','Paran Gadung'),
@@ -12972,7 +12996,9 @@ VALUES
 ('12.71.14.1005','Tembung'),
 ('12.71.14.1006','Bandar Selamat'),
 ('12.71.14.1007','Bantan Timur'),
-('12.71.15','Medan Maimun'),
+('12.71.15','Medan Maimun');
+INSERT INTO regions (code,name)
+VALUES
 ('12.71.15.1001','A u r'),
 ('12.71.15.1002','Hamdan'),
 ('12.71.15.1003','J a t i'),
@@ -13432,7 +13458,7 @@ VALUES
 
 -- Provinsi Sumatera Barat
 -- Provinsi Sumatera Barat
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('13','SUMATERA BARAT'),
 ('13.01','KAB. PESISIR SELATAN'),
@@ -13970,7 +13996,9 @@ VALUES
 ('13.05.11.2003','Toboh Gadang Selatan'),
 ('13.05.11.2004','Toboh Gadang Barat'),
 ('13.05.11.2005','Toboh Gadang Timur'),
-('13.05.12','Padang Sago'),
+('13.05.12','Padang Sago');
+INSERT INTO regions (code,name)
+VALUES
 ('13.05.12.2001','Koto Baru'),
 ('13.05.12.2002','Koto Dalam'),
 ('13.05.12.2003','Batu Kalang'),
@@ -14794,7 +14822,7 @@ VALUES
 ('13.77.04.2016','Kajai');
 
 -- Provinsi Riau
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('14','RIAU'),
 ('14.01','KAB. KAMPAR'),
@@ -14968,7 +14996,9 @@ VALUES
 ('14.01.11.2007','Kota Baru'),
 ('14.01.11.2008','Tebing Lestari'),
 ('14.01.11.2009','Tanah Tinggi'),
-('14.01.11.2010','Koto Aman'),
+('14.01.11.2010','Koto Aman');
+INSERT INTO regions (code,name)
+VALUES
 ('14.01.11.2011','Tapung Lestari'),
 ('14.01.11.2012','Tapung Makmur'),
 ('14.01.11.2013','Tandan Sari'),
@@ -15966,7 +15996,9 @@ VALUES
 ('14.06.11.2009','Tandun Barat'),
 ('14.06.12','Kabun'),
 ('14.06.12.2001','Kabun'),
-('14.06.12.2002','Aliantan'),
+('14.06.12.2002','Aliantan');
+INSERT INTO regions (code,name)
+VALUES
 ('14.06.12.2003','Koto Ranah'),
 ('14.06.12.2004','Boncah Kesuma'),
 ('14.06.12.2005','Batu Langkah Besar'),
@@ -16845,7 +16877,7 @@ VALUES
 ('14.72.07.1005','Bumi Ayu');
 
 -- Provinsi Jambi
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('15','JAMBI'),
 ('15.01','KAB. KERINCI'),
@@ -16964,7 +16996,9 @@ VALUES
 ('15.01.09.2016','Koto Tengah'),
 ('15.01.09.2017','Sungaibendung Air'),
 ('15.01.09.2022','Sungaisampun'),
-('15.01.09.2024','Bedeng Baru'),
+('15.01.09.2024','Bedeng Baru');
+INSERT INTO regions (code,name)
+VALUES
 ('15.01.09.2025','Batang Sangir'),
 ('15.01.09.2030','Sungaidalam'),
 ('15.01.09.2038','Koto Periang'),
@@ -17962,7 +17996,9 @@ VALUES
 ('15.06.09','Muara Papalik'),
 ('15.06.09.1001','Rantau Badak'),
 ('15.06.09.2002','Dusun Mudo'),
-('15.06.09.2003','Intan Jaya'),
+('15.06.09.2003','Intan Jaya');
+INSERT INTO regions (code,name)
+VALUES
 ('15.06.09.2004','Bukit Indah'),
 ('15.06.09.2005','Kemang Manis'),
 ('15.06.09.2006','Rantau Badak Lamo'),
@@ -18569,7 +18605,7 @@ VALUES
 ('15.72.08.2006','Sungai Ning');
 
 -- Provinsi Sumatera Selatan
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('16','SUMATERA SELATAN'),
 ('16.01','KAB. OGAN KOMERING ULU'),
@@ -18960,7 +18996,9 @@ VALUES
 ('16.02.17.2004','Bubusan'),
 ('16.02.17.2005','Air Itam'),
 ('16.02.17.2006','Jejawi'),
-('16.02.17.2007','Karang Agung'),
+('16.02.17.2007','Karang Agung');
+INSERT INTO regions (code,name)
+VALUES
 ('16.02.17.2008','Muara Batun'),
 ('16.02.17.2009','Lingkis'),
 ('16.02.17.2010','Terusan Jawa'),
@@ -19958,7 +19996,9 @@ VALUES
 ('16.05.19.2003','Sukamaju'),
 ('16.05.19.2004','Jamburejo'),
 ('16.05.19.2005','Sumber Sari'),
-('16.05.19.2006','Suka Mulya'),
+('16.05.19.2006','Suka Mulya');
+INSERT INTO regions (code,name)
+VALUES
 ('16.05.19.2007','Sukajaya'),
 ('16.05.19.2008','Madang'),
 ('16.05.19.2009','Sukarami Jaya'),
@@ -20956,7 +20996,9 @@ VALUES
 ('16.09.04','Muara Dua Kisam'),
 ('16.09.04.2001','Lawang Agung'),
 ('16.09.04.2002','Bayur Tengah'),
-('16.09.04.2003','Tanjung Tebat'),
+('16.09.04.2003','Tanjung Tebat');
+INSERT INTO regions (code,name)
+VALUES
 ('16.09.04.2004','Sugihan'),
 ('16.09.04.2005','Penyandingan'),
 ('16.09.04.2006','Alun Dua'),
@@ -21954,7 +21996,9 @@ VALUES
 ('16.73.01.1005','Taba Lestari'),
 ('16.73.01.1007','Batu Urip Taba'),
 ('16.73.01.1015','Taba Koji'),
-('16.73.01.1016','Watervang'),
+('16.73.01.1016','Watervang');
+INSERT INTO regions (code,name)
+VALUES
 ('16.73.02','Lubuk Linggau Barat I'),
 ('16.73.02.1001','Kayu Ara'),
 ('16.73.02.1002','Lubuk Tanjung'),
@@ -22080,7 +22124,7 @@ VALUES
 ('16.74.06.2004','Tanjung Menang');
 
 -- Provinsi Bengkulu
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('17','BENGKULU'),
 ('17.01','KAB. BENGKULU SELATAN'),
@@ -22952,7 +22996,9 @@ VALUES
 ('17.05.05','Semidang Alas Maras'),
 ('17.05.05.1005','Kembang Mumpo'),
 ('17.05.05.2001','Sendawar'),
-('17.05.05.2002','Gelombang'),
+('17.05.05.2002','Gelombang');
+INSERT INTO regions (code,name)
+VALUES
 ('17.05.05.2003','Lubuk Betung'),
 ('17.05.05.2004','Padang Peri'),
 ('17.05.05.2006','Karang Anyar'),
@@ -23737,7 +23783,7 @@ VALUES
 ('17.71.09.1006','Lingkar Timur');
 
 -- Provinsi Lampung
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('18','LAMPUNG'),
 ('18.01','KAB. LAMPUNG SELATAN'),
@@ -23950,7 +23996,9 @@ VALUES
 ('18.01.16.2006','Cugung'),
 ('18.01.16.2007','Hargo Pancuran'),
 ('18.01.16.2008','Kerinjing'),
-('18.01.16.2009','Kunjir'),
+('18.01.16.2009','Kunjir');
+INSERT INTO regions (code,name)
+VALUES
 ('18.01.16.2010','Kota Guring'),
 ('18.01.16.2011','Rajabasa'),
 ('18.01.16.2012','Sukaraja'),
@@ -24948,7 +24996,9 @@ VALUES
 ('18.05.30.2008','Bedarou Indah'),
 ('18.05.30.2009','Tri Makmur Jaya'),
 ('18.05.30.2010','Cempaka Jaya'),
-('18.06','KAB. TANGGAMUS'),
+('18.06','KAB. TANGGAMUS');
+INSERT INTO regions (code,name)
+VALUES
 ('18.06.01','Kota Agung'),
 ('18.06.01.1001','Baros'),
 ('18.06.01.1002','Pasar Madang'),
@@ -25946,7 +25996,9 @@ VALUES
 ('18.09.10.2006','Munca'),
 ('18.09.10.2007','Sidodadi'),
 ('18.09.10.2008','Sukajaya Lempasing'),
-('18.09.10.2009','Talang Mulya'),
+('18.09.10.2009','Talang Mulya');
+INSERT INTO regions (code,name)
+VALUES
 ('18.09.10.2010','Tanjung Agung'),
 ('18.09.11','Way Ratai'),
 ('18.09.11.2001','Bunut'),
@@ -26626,7 +26678,7 @@ VALUES
 ('18.72.05.1004','Margodadi');
 
 -- Provinsi Kepulauan Bangka Belitung
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('19','KEPULAUAN BANGKA BELITUNG'),
 ('19.01','KAB. BANGKA'),
@@ -26944,7 +26996,9 @@ VALUES
 ('19.05.03.2020','Sinar Manik'),
 ('19.05.03.2021','Air Kuang'),
 ('19.05.04','Kelapa'),
-('19.05.04.1001','Kelapa'),
+('19.05.04.1001','Kelapa');
+INSERT INTO regions (code,name)
+VALUES
 ('19.05.04.2002','Mancung'),
 ('19.05.04.2003','Kayu Arang'),
 ('19.05.04.2004','Pusuk'),
@@ -27078,7 +27132,7 @@ VALUES
 ('19.71.07.1005','Semabung Baru');
 
 -- Provinsi Kepulauan RIAU
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('21','KEPULAUAN RIAU'),
 ('21.01','KAB. BINTAN'),
@@ -27583,7 +27637,7 @@ VALUES
 ('21.72.04.1005','Tanjung Unggat');
 
 -- Provinsi DKI Jakarta
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('31','DKI JAKARTA'),
 ('31.01','KAB. ADM. KEP. SERIBU'),
@@ -27905,7 +27959,7 @@ VALUES
 ('31.75.10.1008','Ceger');
 
 -- Provinsi Jawa Barat
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('32','JAWA BARAT'),
 ('32.01','KAB. BOGOR'),
@@ -27942,7 +27996,9 @@ VALUES
 ('32.01.03.2003','Leuwinutug'),
 ('32.01.03.2004','Tajur'),
 ('32.01.03.2005','Sanja'),
-('32.01.03.2008','Karang Asem Timur'),
+('32.01.03.2008','Karang Asem Timur');
+INSERT INTO regions (code,name)
+VALUES
 ('32.01.03.2009','Tarikolot'),
 ('32.01.03.2010','Gunungsari'),
 ('32.01.03.2011','Tangkil'),
@@ -28940,7 +28996,9 @@ VALUES
 ('32.03.10.2001','Ciherang'),
 ('32.03.10.2003','Cibodas'),
 ('32.03.10.2005','Sukanagalih'),
-('32.03.10.2007','Cipendawa'),
+('32.03.10.2007','Cipendawa');
+INSERT INTO regions (code,name)
+VALUES
 ('32.03.10.2010','Ciputri'),
 ('32.03.10.2012','Gadog'),
 ('32.03.10.2013','Sukatani'),
@@ -29938,7 +29996,9 @@ VALUES
 ('32.05.34.2004','Pananjung'),
 ('32.05.34.2005','Linggarjati'),
 ('32.05.35','Cisewu'),
-('32.05.35.2001','Cisewu'),
+('32.05.35.2001','Cisewu');
+INSERT INTO regions (code,name)
+VALUES
 ('32.05.35.2002','Girimukti'),
 ('32.05.35.2003','Pamalayan'),
 ('32.05.35.2004','Cikarang'),
@@ -30936,7 +30996,9 @@ VALUES
 ('32.08.17.2015','Sagarahiyang'),
 ('32.08.17.2016','Gunungsirah'),
 ('32.08.17.2017','Sakerta Timur'),
-('32.08.17.2018','Tugumulya'),
+('32.08.17.2018','Tugumulya');
+INSERT INTO regions (code,name)
+VALUES
 ('32.08.17.2019','Situsari'),
 ('32.08.18','Cigugur'),
 ('32.08.18.1001','Cigugur'),
@@ -31934,7 +31996,9 @@ VALUES
 ('32.10.26.2007','Banyusari'),
 ('32.10.26.2008','Buninagara'),
 ('32.10.26.2009','Jagamulya'),
-('32.10.26.2010','Girimukti'),
+('32.10.26.2010','Girimukti');
+INSERT INTO regions (code,name)
+VALUES
 ('32.10.26.2011','Kramat Jaya'),
 ('32.11','KAB. SUMEDANG'),
 ('32.11.01','Wado'),
@@ -32932,7 +32996,9 @@ VALUES
 ('32.14.05.2005','Cipicung'),
 ('32.14.05.2006','Cianting Utara'),
 ('32.14.05.2007','Cianting'),
-('32.14.05.2008','Pasirmunjul'),
+('32.14.05.2008','Pasirmunjul');
+INSERT INTO regions (code,name)
+VALUES
 ('32.14.05.2009','Tajursindang'),
 ('32.14.05.2010','Cibodas'),
 ('32.14.05.2011','Cijantung'),
@@ -33930,7 +33996,9 @@ VALUES
 ('32.71.01.1006','Ranggamekar'),
 ('32.71.01.1007','Mulyaharja'),
 ('32.71.01.1008','Cikaret'),
-('32.71.01.1009','Bojongkerta'),
+('32.71.01.1009','Bojongkerta');
+INSERT INTO regions (code,name)
+VALUES
 ('32.71.01.1010','Rancamaya'),
 ('32.71.01.1011','Kertamaya'),
 ('32.71.01.1012','Harjasari'),
@@ -34521,7 +34589,7 @@ VALUES
 ('32.79.04.2006','Kujangsari');
 
 -- Provinsi Jawa Tengah
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('33','JAWA TENGAH'),
 ('33.01','KAB. CILACAP'),
@@ -34928,7 +34996,9 @@ VALUES
 ('33.02.08.2001','Plangkapan'),
 ('33.02.08.2002','Gumelar Lor'),
 ('33.02.08.2003','Gumelar Kidul'),
-('33.02.08.2004','Karangpetir'),
+('33.02.08.2004','Karangpetir');
+INSERT INTO regions (code,name)
+VALUES
 ('33.02.08.2005','Gebangsari'),
 ('33.02.08.2006','Prembun'),
 ('33.02.08.2007','Buniayu'),
@@ -35926,7 +35996,9 @@ VALUES
 ('33.05.08.2007','Rowo'),
 ('33.05.08.2008','Singoyudan'),
 ('33.05.08.2009','Wergonayan'),
-('33.05.08.2010','Selotumpeng'),
+('33.05.08.2010','Selotumpeng');
+INSERT INTO regions (code,name)
+VALUES
 ('33.05.08.2011','Sitibentar'),
 ('33.05.08.2012','Karanggede'),
 ('33.05.08.2013','Kertodeso'),
@@ -36924,7 +36996,9 @@ VALUES
 ('33.07.09.1015','Jlamprang'),
 ('33.07.09.1020','Wonosobo Barat'),
 ('33.07.09.1021','Wonosobo Timur'),
-('33.07.09.2001','Wonolelo'),
+('33.07.09.2001','Wonolelo');
+INSERT INTO regions (code,name)
+VALUES
 ('33.07.09.2005','Jogoyitnan'),
 ('33.07.09.2007','Pancurwening'),
 ('33.07.09.2016','Wonosari'),
@@ -37922,7 +37996,9 @@ VALUES
 ('33.10.13','Karangdowo'),
 ('33.10.13.2001','Tulas'),
 ('33.10.13.2002','Bulusan'),
-('33.10.13.2003','Ringinputih'),
+('33.10.13.2003','Ringinputih');
+INSERT INTO regions (code,name)
+VALUES
 ('33.10.13.2004','Soka'),
 ('33.10.13.2005','Tumpukan'),
 ('33.10.13.2006','Karangjoho'),
@@ -38920,7 +38996,9 @@ VALUES
 ('33.14.07.2004','Bedoro'),
 ('33.14.07.2005','Toyogo'),
 ('33.14.07.2006','Banyurip'),
-('33.14.07.2007','Gringging'),
+('33.14.07.2007','Gringging');
+INSERT INTO regions (code,name)
+VALUES
 ('33.14.07.2008','Banaran'),
 ('33.14.07.2009','Sambungmacan'),
 ('33.14.08','Ngrampal'),
@@ -39918,7 +39996,9 @@ VALUES
 ('33.17.11.2018','Wuwur'),
 ('33.17.11.2019','Ngulangan'),
 ('33.17.11.2020','Banyuurip'),
-('33.17.11.2021','Johogunung'),
+('33.17.11.2021','Johogunung');
+INSERT INTO regions (code,name)
+VALUES
 ('33.17.11.2022','Trenggulunan'),
 ('33.17.11.2023','Ngroto'),
 ('33.17.12','Kragan'),
@@ -40916,7 +40996,9 @@ VALUES
 ('33.21.08.2013','Gajah'),
 ('33.21.08.2014','Sari'),
 ('33.21.08.2015','Mlekang'),
-('33.21.08.2016','Sambung'),
+('33.21.08.2016','Sambung');
+INSERT INTO regions (code,name)
+VALUES
 ('33.21.08.2017','Mojosimo'),
 ('33.21.08.2018','Tlogopandogan'),
 ('33.21.09','Karanganyar'),
@@ -41914,7 +41996,9 @@ VALUES
 ('33.25.01.2007','Brokoh'),
 ('33.25.01.2008','Wates'),
 ('33.25.01.2009','Brayo'),
-('33.25.01.2010','Kemligi'),
+('33.25.01.2010','Kemligi');
+INSERT INTO regions (code,name)
+VALUES
 ('33.25.01.2011','Sigayam'),
 ('33.25.01.2012','Kreyo'),
 ('33.25.01.2013','Siwatu'),
@@ -42912,7 +42996,9 @@ VALUES
 ('33.28.12.2011','Tegalwangi'),
 ('33.28.12.2012','Kaligayam'),
 ('33.28.12.2013','Talang'),
-('33.28.12.2014','Kaladawa'),
+('33.28.12.2014','Kaladawa');
+INSERT INTO regions (code,name)
+VALUES
 ('33.28.12.2015','Cangkring'),
 ('33.28.12.2016','Dawuhan'),
 ('33.28.12.2017','Getaskerep'),
@@ -43699,7 +43785,7 @@ VALUES
 ('33.76.04.1007','Pesurungan Lor');
 
 -- Provinsi Daerah Istimewa Yogyakarta
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('34','DAERAH ISTIMEWA YOGYAKARTA'),
 ('34.01','KAB. KULON PROGO'),
@@ -43910,7 +43996,9 @@ VALUES
 ('34.03.01.2010','Wareng'),
 ('34.03.01.2011','Duwet'),
 ('34.03.01.2012','Mulo'),
-('34.03.01.2013','Wunung'),
+('34.03.01.2013','Wunung');
+INSERT INTO regions (code,name)
+VALUES
 ('34.03.01.2014','Karangrejek'),
 ('34.03.02','Nglipar'),
 ('34.03.02.2001','Natah'),
@@ -44225,7 +44313,7 @@ VALUES
 ('34.71.14.1003','Purbayan');
 
 -- Provinsi Jawa Timur
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('35','JAWA TIMUR'),
 ('35.01','KAB. PACITAN'),
@@ -44908,7 +44996,9 @@ VALUES
 ('35.03.14','Suruh'),
 ('35.03.14.2001','Puru'),
 ('35.03.14.2002','Wonokerto'),
-('35.03.14.2003','Nglebo'),
+('35.03.14.2003','Nglebo');
+INSERT INTO regions (code,name)
+VALUES
 ('35.03.14.2004','Ngrandu'),
 ('35.03.14.2005','Gamping'),
 ('35.03.14.2006','Suruh'),
@@ -45906,7 +45996,9 @@ VALUES
 ('35.07.05.2009','Majangtengah'),
 ('35.07.05.2010','Rembun'),
 ('35.07.05.2011','Pojok'),
-('35.07.05.2012','Jambangan'),
+('35.07.05.2012','Jambangan');
+INSERT INTO regions (code,name)
+VALUES
 ('35.07.06','Ampelgading'),
 ('35.07.06.2001','Lebakharjo'),
 ('35.07.06.2002','Wirotaman'),
@@ -46904,7 +46996,9 @@ VALUES
 ('35.10.14.2009','Pondoknongko'),
 ('35.10.14.2010','Dadapan'),
 ('35.10.14.2011','Kedayunan'),
-('35.10.14.2012','Kabat'),
+('35.10.14.2012','Kabat');
+INSERT INTO regions (code,name)
+VALUES
 ('35.10.14.2013','Macan Putih'),
 ('35.10.14.2014','Tambong'),
 ('35.10.14.2015','Pendarungan'),
@@ -47902,7 +47996,9 @@ VALUES
 ('35.14.09.2002','Pakukerto'),
 ('35.14.09.2003','Glagahsari'),
 ('35.14.09.2004','Sukorejo'),
-('35.14.09.2005','Karangsono'),
+('35.14.09.2005','Karangsono');
+INSERT INTO regions (code,name)
+VALUES
 ('35.14.09.2006','Sebandung'),
 ('35.14.09.2007','Dukuhsari'),
 ('35.14.09.2008','Lecari'),
@@ -48900,7 +48996,9 @@ VALUES
 ('35.17.03.2006','Badang'),
 ('35.17.03.2007','Pulorejo'),
 ('35.17.03.2008','Banyuarang'),
-('35.17.03.2009','Sidowarek'),
+('35.17.03.2009','Sidowarek');
+INSERT INTO regions (code,name)
+VALUES
 ('35.17.03.2010','Gajah'),
 ('35.17.03.2011','Kesamben'),
 ('35.17.03.2012','Kertorejo'),
@@ -49898,7 +49996,9 @@ VALUES
 ('35.20.13.1006','Manisrejo'),
 ('35.20.13.2002','Mantren'),
 ('35.20.13.2003','Gondang'),
-('35.20.13.2004','Sambirembe'),
+('35.20.13.2004','Sambirembe');
+INSERT INTO regions (code,name)
+VALUES
 ('35.20.13.2005','Patihan'),
 ('35.20.13.2007','Pelem'),
 ('35.20.13.2008','Baluk'),
@@ -50896,7 +50996,9 @@ VALUES
 ('35.23.14.2007','Rengel'),
 ('35.23.14.2008','Maibit'),
 ('35.23.14.2009','Bulurejo'),
-('35.23.14.2010','Karangtinoto'),
+('35.23.14.2010','Karangtinoto');
+INSERT INTO regions (code,name)
+VALUES
 ('35.23.14.2011','Sawahan'),
 ('35.23.14.2013','Kanorejo'),
 ('35.23.14.2014','Tambakrejo'),
@@ -51894,7 +51996,9 @@ VALUES
 ('35.26.01.1002','Kemayoran'),
 ('35.26.01.1003','Pangeranan'),
 ('35.26.01.1004','Demangan'),
-('35.26.01.1005','Kraton'),
+('35.26.01.1005','Kraton');
+INSERT INTO regions (code,name)
+VALUES
 ('35.26.01.1006','Pejagan'),
 ('35.26.01.1007','Bancaran'),
 ('35.26.01.2008','Sembilangan'),
@@ -52892,7 +52996,9 @@ VALUES
 ('35.29.22','Raas'),
 ('35.29.22.2001','Ketupat'),
 ('35.29.22.2002','Jungkat'),
-('35.29.22.2003','Kropoh'),
+('35.29.22.2003','Kropoh');
+INSERT INTO regions (code,name)
+VALUES
 ('35.29.22.2004','Karangnangka'),
 ('35.29.22.2005','Alas Malang'),
 ('35.29.22.2006','Poteran'),
@@ -53435,7 +53541,7 @@ VALUES
 ('35.79.03.2007','Torongrejo');
 
 -- Provinsi Banten
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('36','BANTEN'),
 ('36.01','KAB. PANDEGLANG'),
@@ -53890,7 +53996,9 @@ VALUES
 ('36.02.06.2006','Sangkanwangi'),
 ('36.02.06.2007','Nayagati'),
 ('36.02.06.2008','Bojongmenteng'),
-('36.02.06.2009','Margawangi'),
+('36.02.06.2009','Margawangi');
+INSERT INTO regions (code,name)
+VALUES
 ('36.02.06.2010','Wantisari'),
 ('36.02.06.2011','Jalupangmulya'),
 ('36.02.06.2012','Cisimeut Raya'),
@@ -54888,7 +54996,9 @@ VALUES
 ('36.71.05.1007','Ketapang'),
 ('36.71.05.1008','Poris Plawad'),
 ('36.71.05.1009','Poris Plawad Utara'),
-('36.71.05.1010','Poris Plawad Indah'),
+('36.71.05.1010','Poris Plawad Indah');
+INSERT INTO regions (code,name)
+VALUES
 ('36.71.06','Ciledug'),
 ('36.71.06.1001','Paninggilan'),
 ('36.71.06.1002','Sudimara Barat'),
@@ -55155,7 +55265,7 @@ VALUES
 ('36.74.07.1006','Bakti Jaya');
 
 -- Provinsi Bali
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('51','BALI'),
 ('51.01','KAB. JEMBRANA'),
@@ -55886,7 +55996,9 @@ VALUES
 ('51.08.09.2002','Pacung'),
 ('51.08.09.2003','Julah'),
 ('51.08.09.2004','Madenan'),
-('51.08.09.2005','Bondalem'),
+('51.08.09.2005','Bondalem');
+INSERT INTO regions (code,name)
+VALUES
 ('51.08.09.2006','Tejakula'),
 ('51.08.09.2007','Les'),
 ('51.08.09.2008','Penuktukan'),
@@ -55942,7 +56054,7 @@ VALUES
 ('51.71.04.2011','Peguyangan Kangin');
 
 -- Provinsi Nusa Tenggara Barat
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('52','NUSA TENGGARA BARAT'),
 ('52.01','KAB. LOMBOK BARAT'),
@@ -56884,7 +56996,9 @@ VALUES
 ('52.06.07.2009','Oi Tui'),
 ('52.06.07.2010','Tadewa'),
 ('52.06.07.2011','Nanga Wera'),
-('52.06.07.2012','Ranggasolo'),
+('52.06.07.2012','Ranggasolo');
+INSERT INTO regions (code,name)
+VALUES
 ('52.06.07.2013','Kalajena'),
 ('52.06.07.2014','Mandala'),
 ('52.06.08','Donggo'),
@@ -57224,7 +57338,7 @@ VALUES
 ('52.72.05.1010','Matakando');
 
 -- Provinsi Nusa Tenggara Timur
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('53','NUSA TENGGARA TIMUR'),
 ('53.01','KAB. KUPANG'),
@@ -57882,7 +57996,9 @@ VALUES
 ('53.03.15','Bikomi Tengah'),
 ('53.03.15.2001','Buk'),
 ('53.03.15.2002','Oenenu'),
-('53.03.15.2003','Nimasi'),
+('53.03.15.2003','Nimasi');
+INSERT INTO regions (code,name)
+VALUES
 ('53.03.15.2004','Oelbonak'),
 ('53.03.15.2005','Kuenak'),
 ('53.03.15.2006','Oenino'),
@@ -58880,7 +58996,9 @@ VALUES
 ('53.08.11','Maukaro'),
 ('53.08.11.2001','Kebirangga'),
 ('53.08.11.2002','Kebirangga Selatan'),
-('53.08.11.2003','Kamubheka'),
+('53.08.11.2003','Kamubheka');
+INSERT INTO regions (code,name)
+VALUES
 ('53.08.11.2004','Magekapa'),
 ('53.08.11.2005','Boafeo'),
 ('53.08.11.2006','Nabe'),
@@ -59878,7 +59996,9 @@ VALUES
 ('53.14.09.2002','Anarae'),
 ('53.14.09.2003','Mbiu Lombo'),
 ('53.14.09.2004','Nuse'),
-('53.14.09.2005','Ndaonuse'),
+('53.14.09.2005','Ndaonuse');
+INSERT INTO regions (code,name)
+VALUES
 ('53.14.10','Landu Leko'),
 ('53.14.10.2001','Bolatena'),
 ('53.14.10.2002','Lifuleo'),
@@ -60876,7 +60996,9 @@ VALUES
 ('53.71.02','Maulafa'),
 ('53.71.02.1001','Oepura'),
 ('53.71.02.1002','Maulafa'),
-('53.71.02.1003','Penfui'),
+('53.71.02.1003','Penfui');
+INSERT INTO regions (code,name)
+VALUES
 ('53.71.02.1004','Naimata'),
 ('53.71.02.1005','Bello'),
 ('53.71.02.1006','Fatukoa'),
@@ -60920,7 +61042,7 @@ VALUES
 
 
 -- Provinsi Kalimantan Barat
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('61','KALIMANTAN BARAT'),
 ('61.01','KAB. SAMBAS'),
@@ -61874,7 +61996,9 @@ VALUES
 ('61.05.07.2007','Taok'),
 ('61.05.07.2008','Empaci'),
 ('61.05.07.2009','Baras'),
-('61.05.07.2010','Pangkadan Sungai Rupa'),
+('61.05.07.2010','Pangkadan Sungai Rupa');
+INSERT INTO regions (code,name)
+VALUES
 ('61.05.07.2011','Kumpang'),
 ('61.05.07.2012','Mangat Baru'),
 ('61.05.07.2013','Manaong Baru'),
@@ -62872,7 +62996,9 @@ VALUES
 ('61.10.03.2017','Domet Permai'),
 ('61.10.03.2018','Nyanggau'),
 ('61.10.03.2019','Jabai'),
-('61.10.04','Menukung'),
+('61.10.04','Menukung');
+INSERT INTO regions (code,name)
+VALUES
 ('61.10.04.2001','Menukung Kota'),
 ('61.10.04.2002','Nanga Ella Hulu'),
 ('61.10.04.2003','Sungai Sampuk'),
@@ -63243,7 +63369,7 @@ VALUES
 ('61.72.05.1004','Pangmilang');
 
 -- Provinsi Kalimantan Tengah
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('62','KALIMANTAN TENGAH'),
 ('62.01','KAB. KOTAWARINGIN BARAT'),
@@ -63870,7 +63996,9 @@ VALUES
 ('62.04.05.2018','Palu Rejo'),
 ('62.04.05.2019','Wayun'),
 ('62.04.05.2020','Marga Jaya'),
-('62.04.05.2021','Ruhing Raya'),
+('62.04.05.2021','Ruhing Raya');
+INSERT INTO regions (code,name)
+VALUES
 ('62.04.06','Dusun Selatan'),
 ('62.04.06.1006','Jelapat'),
 ('62.04.06.1007','Hilir Seper'),
@@ -64868,7 +64996,9 @@ VALUES
 ('62.13.04.2010','Danau'),
 ('62.13.04.2011','Pianggu'),
 ('62.13.05','Dusun Tengah'),
-('62.13.05.1011','Ampah Kota'),
+('62.13.05.1011','Ampah Kota');
+INSERT INTO regions (code,name)
+VALUES
 ('62.13.05.2008','Saing'),
 ('62.13.05.2009','Rodok'),
 ('62.13.05.2010','Ampah II'),
@@ -64969,7 +65099,7 @@ VALUES
 ('62.71.05.1007','Bukit Sua');
 
 -- Provinsi Kalimantan Selatan
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('63','KALIMANTAN SELATAN'),
 ('63.01','KAB. TANAH LAUT'),
@@ -65866,7 +65996,9 @@ VALUES
 ('63.04.16.2011','Surya Kanta'),
 ('63.04.16.2012','Sumber Rahayu'),
 ('63.04.16.2013','Dwipasari'),
-('63.04.17','Jejangkit'),
+('63.04.17','Jejangkit');
+INSERT INTO regions (code,name)
+VALUES
 ('63.04.17.2001','Sampurna'),
 ('63.04.17.2002','Jejangkit Barat'),
 ('63.04.17.2003','Bahandang'),
@@ -66864,7 +66996,9 @@ VALUES
 ('63.10.09.2005','Angsana'),
 ('63.10.09.2006','Banjar Sari'),
 ('63.10.09.2007','Bayan Sari'),
-('63.10.09.2008','Makmur'),
+('63.10.09.2008','Makmur');
+INSERT INTO regions (code,name)
+VALUES
 ('63.10.09.2009','Mekar Jaya'),
 ('63.10.10','Kuranji'),
 ('63.10.10.2001','Giri Mulya'),
@@ -67151,7 +67285,7 @@ VALUES
 ('63.72.06.1004','Landasan Ulin Selatan');
 
 -- Provinsi Kalimantan Timur
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('64','KALIMANTAN TIMUR'),
 ('64.01','KAB. PASER'),
@@ -67862,7 +67996,9 @@ VALUES
 ('64.07.17.2016','Muara Ponaq'),
 ('64.07.18','Mook Manaar Bulatn'),
 ('64.07.18.2001','Sakaq Lotoq'),
-('64.07.18.2002','Sakaq Tada'),
+('64.07.18.2002','Sakaq Tada');
+INSERT INTO regions (code,name)
+VALUES
 ('64.07.18.2003','Gemuruh'),
 ('64.07.18.2004','Karangan'),
 ('64.07.18.2005','Merayaq'),
@@ -68309,7 +68445,7 @@ VALUES
 ('64.74.03.1003','Kanaan');
 
 -- Provinsi Kalimantan Utara
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('65','KALIMANTAN UTARA'),
 ('65.01','KAB. BULUNGAN'),
@@ -68856,7 +68992,7 @@ VALUES
 ('65.71.04.1003','Juata Kerikil');
 
 -- Provinsi Sulawesi Utara
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('71','SULAWESI UTARA'),
 ('71.01','KAB. BOLAANG MONGONDOW'),
@@ -69719,7 +69855,9 @@ VALUES
 ('71.04.18.2005','Tarohan'),
 ('71.04.18.2006','Tarohan Selatan'),
 ('71.04.18.2007','Matahit'),
-('71.04.19','Essang Selatan'),
+('71.04.19','Essang Selatan');
+INSERT INTO regions (code,name)
+VALUES
 ('71.04.19.2001','Sambuara Satu'),
 ('71.04.19.2002','Sambuara'),
 ('71.04.19.2003','Ensem'),
@@ -69860,7 +69998,9 @@ VALUES
 ('71.05.16.2008','Temboan'),
 ('71.05.16.2009','Kinamang Satu'),
 ('71.05.16.2010','Lowian Satu'),
-('71.05.16.2011','Tumani Utara'),
+('71.05.16.2011','Tumani Utara');
+INSERT INTO regions (code,name)
+VALUES
 ('71.05.16.2012','Tumani Selatan'),
 ('71.05.17','Amurang Barat'),
 ('71.05.17.1002','Kawangkoan Bawah'),
@@ -70858,7 +70998,9 @@ VALUES
 ('71.74.01.2008','Pontodon Timur'),
 ('71.74.02','Kotamobagu Timur'),
 ('71.74.02.1003','Kotobangun'),
-('71.74.02.1004','Tumubui'),
+('71.74.02.1004','Tumubui');
+INSERT INTO regions (code,name)
+VALUES
 ('71.74.02.1005','Sinindian'),
 ('71.74.02.1006','Matali'),
 ('71.74.02.1007','Motoboi Besar'),
@@ -70886,7 +71028,7 @@ VALUES
 ('71.74.04.1006','Mongkonai Barat');
 
 -- Provinsi Sulawesi Tengah
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('72','SULAWESI TENGAH'),
 ('72.01','KAB. BANGGAI'),
@@ -71856,7 +71998,9 @@ VALUES
 ('72.05.09.2010','Bulogidon Tanjung'),
 ('72.05.09.2011','Pandangan'),
 ('72.05.10','Karamat'),
-('72.05.10.2001','Mokupo'),
+('72.05.10.2001','Mokupo');
+INSERT INTO regions (code,name)
+VALUES
 ('72.05.10.2002','Mendaan'),
 ('72.05.10.2003','Baruga'),
 ('72.05.10.2004','Monano'),
@@ -72854,7 +72998,9 @@ VALUES
 ('72.11.03.2003','Kaukes'),
 ('72.11.03.2004','Bungin'),
 ('72.11.03.2005','Panapat'),
-('72.11.03.2006','Ndindibung'),
+('72.11.03.2006','Ndindibung');
+INSERT INTO regions (code,name)
+VALUES
 ('72.11.03.2007','Nggasuang'),
 ('72.11.03.2008','Mbuang-Mbuang'),
 ('72.11.03.2009','Timpaus'),
@@ -73096,7 +73242,7 @@ VALUES
 ('72.71.08.1008','Talise Valangguni');
 
 -- Provinsi Sulawesi Selatan
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('73','SULAWESI SELATAN'),
 ('73.01','KAB. KEPULAUAN SELAYAR'),
@@ -73852,7 +73998,9 @@ VALUES
 ('73.07.01.2004','Arabika'),
 ('73.07.01.2005','Bonto Salama'),
 ('73.07.01.2006','Turungan Baji'),
-('73.07.01.2007','Barania'),
+('73.07.01.2007','Barania');
+INSERT INTO regions (code,name)
+VALUES
 ('73.07.01.2008','Boto Lempangan'),
 ('73.07.01.2009','Terasa'),
 ('73.07.02','Sinjai Selatan'),
@@ -74850,7 +74998,9 @@ VALUES
 ('73.13.10.1003','Tobarakka'),
 ('73.13.10.1004','Benteng'),
 ('73.13.10.2005','Batu'),
-('73.13.10.2006','Lauwa'),
+('73.13.10.2006','Lauwa');
+INSERT INTO regions (code,name)
+VALUES
 ('73.13.10.2007','Tanrongi'),
 ('73.13.10.2008','Lompoloang'),
 ('73.13.10.2009','Tellesang'),
@@ -75848,7 +75998,9 @@ VALUES
 ('73.22.10.2002','Cendana Putih'),
 ('73.22.10.2003','Hasana'),
 ('73.22.10.2004','Kapidi'),
-('73.22.10.2005','Uraso'),
+('73.22.10.2005','Uraso');
+INSERT INTO regions (code,name)
+VALUES
 ('73.22.10.2006','Benteng'),
 ('73.22.10.2007','Ujung Mattajang'),
 ('73.22.10.2009','Cendana Putih I'),
@@ -76484,7 +76636,7 @@ VALUES
 ('73.73.09.1005','Buntu Datu');
 
 -- Provinsi Sulawesi Tenggara
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('74','SULAWESI TENGGARA'),
 ('74.01','KAB. KOLAKA'),
@@ -76846,7 +76998,9 @@ VALUES
 ('74.02.20.2014','Punggaluku'),
 ('74.02.20.2015','Waworaha'),
 ('74.02.20.2016','Lalowulo'),
-('74.02.21','Bondoala'),
+('74.02.21','Bondoala');
+INSERT INTO regions (code,name)
+VALUES
 ('74.02.21.1003','Laosu'),
 ('74.02.21.2002','Pebunooha'),
 ('74.02.21.2004','Lalonggalaku'),
@@ -77844,7 +77998,9 @@ VALUES
 ('74.07.01.2009','Maleko'),
 ('74.07.01.2013','Longa'),
 ('74.07.01.2022','Pada Raya Makmur'),
-('74.07.01.2023','Waelumu'),
+('74.07.01.2023','Waelumu');
+INSERT INTO regions (code,name)
+VALUES
 ('74.07.01.2024','Patuno'),
 ('74.07.01.2027','Waginopo'),
 ('74.07.01.2028','Tindoi Timur'),
@@ -78842,7 +78998,9 @@ VALUES
 ('74.15.03.2005','Lapandewa Kaindea'),
 ('74.15.03.2006','Lapandewa'),
 ('74.15.03.2007','Lapandewa Jaya'),
-('74.15.04','Batu Atas'),
+('74.15.04','Batu Atas');
+INSERT INTO regions (code,name)
+VALUES
 ('74.15.04.2001','Batuatas Liwu'),
 ('74.15.04.2002','Batuatas Barat'),
 ('74.15.04.2003','Wacuala'),
@@ -79012,7 +79170,7 @@ VALUES
 ('74.72.08.1006','Nganganaumala');
 
 -- Provinsi Gorontalo
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('75','GORONTALO'),
 ('75.01','KAB. GORONTALO'),
@@ -79829,7 +79987,7 @@ VALUES
 ('75.71.09.1005','Siendeng');
 
 -- Provinsi Sulawesi Barat
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('76','SULAWESI BARAT'),
 ('76.01','KAB. PASANGKAYU'),
@@ -79840,7 +79998,9 @@ VALUES
 ('76.01.01.2007','Pangiang'),
 ('76.01.01.2008','Kalola'),
 ('76.01.01.2009','Wulai'),
-('76.01.02','Pasangkayu'),
+('76.01.02','Pasangkayu');
+INSERT INTO regions (code,name)
+VALUES
 ('76.01.02.1001','Pasangkayu'),
 ('76.01.02.1002','Martajaya'),
 ('76.01.02.2010','Pakava'),
@@ -80557,7 +80717,7 @@ VALUES
 ('76.06.05.2011','Sanjango');
 
 -- Provinsi Maluku
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('81','MALUKU'),
 ('81.01','KAB. MALUKU TENGAH'),
@@ -80838,7 +80998,9 @@ VALUES
 ('81.02.04.2015','Ohoirenan'),
 ('81.02.04.2016','Soindat'),
 ('81.02.05','Kei Besar Utara Timur'),
-('81.02.05.2001','Hollat'),
+('81.02.05.2001','Hollat');
+INSERT INTO regions (code,name)
+VALUES
 ('81.02.05.2002','Ohoiraut'),
 ('81.02.05.2003','Haar Ohoimel'),
 ('81.02.05.2004','Langgiar Haar'),
@@ -81836,7 +81998,9 @@ VALUES
 ('81.71.01.1007','Wainitu'),
 ('81.71.01.1008','Benteng'),
 ('81.71.01.1009','Kudamati'),
-('81.71.01.1010','Mangga Dua'),
+('81.71.01.1010','Mangga Dua');
+INSERT INTO regions (code,name)
+VALUES
 ('81.71.01.1011','Urimessing'),
 ('81.71.01.1012','Waihaong'),
 ('81.71.01.1013','Silale'),
@@ -81924,7 +82088,7 @@ VALUES
 ('81.72.05.2007','Niela');
 
 -- Provinsi Maluku Utara
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('82','MALUKU UTARA'),
 ('82.01','KAB. HALMAHERA BARAT'),
@@ -82834,7 +82998,9 @@ VALUES
 ('82.06.06.2004','Marimoi'),
 ('82.06.06.2005','Bololo'),
 ('82.06.06.2006','Helaitetor'),
-('82.06.06.2007','Dowongi Jaya'),
+('82.06.06.2007','Dowongi Jaya');
+INSERT INTO regions (code,name)
+VALUES
 ('82.06.06.2008','Majiko Tongone'),
 ('82.06.07','Wasile Timur'),
 ('82.06.07.2001','Dodaga'),
@@ -83238,7 +83404,7 @@ VALUES
 ('82.72.08.1007','Jiko Cobo');
 
 -- Provinsi Papua
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('91','PAPUA'),
 ('91.01','KAB. MERAUKE'),
@@ -83832,7 +83998,9 @@ VALUES
 ('91.03.01.1001','Sentani Kota'),
 ('91.03.01.1002','Dobonsolo'),
 ('91.03.01.1003','Hinekombe'),
-('91.03.01.2004','Sereh'),
+('91.03.01.2004','Sereh');
+INSERT INTO regions (code,name)
+VALUES
 ('91.03.01.2005','Yobeh'),
 ('91.03.01.2006','Ilfele'),
 ('91.03.01.2007','Keheran'),
@@ -84830,7 +84998,9 @@ VALUES
 ('91.07.29.2018','Ambit-Mbit'),
 ('91.07.29.2019','Aulakme'),
 ('91.07.30','Nioga'),
-('91.07.30.2001','Nioga'),
+('91.07.30.2001','Nioga');
+INSERT INTO regions (code,name)
+VALUES
 ('91.07.30.2002','Yonggi'),
 ('91.07.30.2003','Wonggi'),
 ('91.07.30.2004','Wambagalo'),
@@ -85828,7 +85998,9 @@ VALUES
 ('91.12.34.2007','Kwarban'),
 ('91.13','KAB. YAHUKIMO'),
 ('91.13.01','Kurima'),
-('91.13.01.1001','Obolma'),
+('91.13.01.1001','Obolma');
+INSERT INTO regions (code,name)
+VALUES
 ('91.13.01.2003','Ibiroma'),
 ('91.13.01.2013','Hihundes'),
 ('91.13.01.2015','Wanem'),
@@ -86826,7 +86998,9 @@ VALUES
 ('91.14.34.2001','Wama'),
 ('91.14.34.2002','Wonitu'),
 ('91.14.34.2003','Kumbur'),
-('91.14.34.2004','Kwarini'),
+('91.14.34.2004','Kwarini');
+INSERT INTO regions (code,name)
+VALUES
 ('91.14.34.2005','Weyage'),
 ('91.14.34.2006','Timer'),
 ('91.14.34.2007','Gulak'),
@@ -87824,7 +87998,9 @@ VALUES
 ('91.21.04.2004','Higisyam'),
 ('91.21.05','Ilugwa'),
 ('91.21.05.2001','Kalarin'),
-('91.21.05.2002','Melenggama'),
+('91.21.05.2002','Melenggama');
+INSERT INTO regions (code,name)
+VALUES
 ('91.21.05.2003','Ilugwa'),
 ('91.21.05.2004','Wirima'),
 ('91.21.05.2005','Danama'),
@@ -88822,7 +88998,9 @@ VALUES
 ('91.25.01.2019','kibogolome'),
 ('91.25.01.2020','Ilambet'),
 ('91.25.01.2021','Kalebut'),
-('91.25.02','Wangbe'),
+('91.25.02','Wangbe');
+INSERT INTO regions (code,name)
+VALUES
 ('91.25.02.2001','Wangbe'),
 ('91.25.02.2003','Jindak'),
 ('91.25.02.2004','Pungki'),
@@ -89359,7 +89537,7 @@ VALUES
 ('91.71.05.2005','Waena');
 
 -- Provinsi Papua Barat
-INSERT INTO wilayah (kode, nama)
+INSERT INTO regions (code,name)
 VALUES
 ('92','PAPUA BARAT'),
 ('92.01','KAB. SORONG'),
@@ -89820,7 +89998,9 @@ VALUES
 ('92.02.21.2002','Sidey'),
 ('92.02.21.2003','Waramui'),
 ('92.02.21.2004','Kassi'),
-('92.02.21.2005','Saray'),
+('92.02.21.2005','Saray');
+INSERT INTO regions (code,name)
+VALUES
 ('92.02.21.2006','Sidey Baru'),
 ('92.02.21.2007','Sidey Makmur'),
 ('92.02.21.2008','Meyof I'),
@@ -90818,7 +90998,9 @@ VALUES
 ('92.09.25.2001','Atai'),
 ('92.09.25.2002','Akmuri'),
 ('92.09.25.2003','Awori'),
-('92.09.25.2004','Itafiti'),
+('92.09.25.2004','Itafiti');
+INSERT INTO regions (code,name)
+VALUES
 ('92.09.25.2005','Atunari'),
 ('92.09.25.2006','Ajami Waripi'),
 ('92.09.25.2007','Narai'),
